@@ -13,6 +13,6 @@ class Pirate:
 
     def attack ( self , ninja ):
         ninja.health -= self.strength
-        print(f"{self.name} attacked for {self.strength} damage! {ninja.name} has {ninja.health} left!")
+        print(f"{self.name} attacked for {self.strength} damage! {ninja.name} has {ninja.health} hp left!")
         return self
 
