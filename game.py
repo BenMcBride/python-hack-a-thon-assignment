@@ -6,6 +6,7 @@ def fightToTheDeath(pirate, ninja):
     pir_speed = ninja.speed
     while(ninja.health > 0 and pirate.health > 0):
         turns += 1
+
         if ninja.speed >= pirate.speed:
             #ninja attacks first
             if turns % nin_speed == 0:
@@ -36,7 +37,9 @@ print("3) Display Pirates")
 print("4) Display Ninjas")
 print("5) Make them fight!")
 print("6) Terminate this program")
+
 option = input("Please select an option: ")
+
 while option != "6":
     if option == "1":
         pirate_name = input("Please type name of the Pirate: ")
